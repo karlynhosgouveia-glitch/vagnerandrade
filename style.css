@@ -91,14 +91,8 @@ body {
 }
 
 /* Ajuste específico para telas móveis (celulares) */
-@media (max-width: 768px) {
-    .hero {
-        /* Em telas estreitas, 'contain' exibe a imagem 100% inteira na altura sem cortar nada */
-        background-size: contain;
-        background-position: right center;
-        background-color: #000; /* Preenche eventuais sobras laterais com preto */
-    }
-}
+@media (max-width: 768px) {}
+
 .hero-content h1 {
     font-size: 3.5rem;
     line-height: 1.1;
