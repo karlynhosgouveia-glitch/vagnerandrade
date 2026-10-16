@@ -94,6 +94,7 @@ body {
     height: 100vh;
     /* Alterado de 'center center/cover' para 'right center/cover' */
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(img/hero.jpg) no-repeat right center/cover;
+    background-size: contain;
     display: flex;
     align-items: center;
     padding: 0 10%;
