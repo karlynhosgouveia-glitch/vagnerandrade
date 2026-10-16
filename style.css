@@ -34,10 +34,10 @@ body {
     color: #fff;
 }
 .hero-logo {
-    max-width: 800px; /* Ajuste a largura máxima conforme o tamanho desejado para o logo */
+    max-width: 500px; /* Ajuste a largura máxima conforme o tamanho desejado para o logo */
     width: 100%;      /* Garante que o logo seja responsivo em telemóveis */
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     display: block;
 }
 
