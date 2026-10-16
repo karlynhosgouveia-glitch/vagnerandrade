@@ -1,0 +1,315 @@
+/* RESET E CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* CABEÇALHO */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(11, 11, 11, 0.95);
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* SEÇÃO HERO (HOME) */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 span {
+    color: #3b82f6;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #d1d5db;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+/* SEÇÃO SOBRE */
+.about {
+    padding: 100px 10%;
+    background-color: #121212;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    color: #9ca3af;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* SEÇÃO GALERIA */
+.gallery {
+    padding: 100px 10%;
+    background-color: #0b0b0b;
+    text-align: center;
+}
+
+.gallery h2, .instagram-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 6px;
+    background: #000;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    /* Transição suave para o efeito de zoom e escurecimento */
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* SEÇÃO INSTAGRAM */
+.instagram-section {
+    padding: 100px 10%;
+    background-color: #121212;
+    text-align: center;
+}
+
+.insta-handle {
+    display: inline-block;
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 40px;
+    transition: color 0.3s;
+}
+
+.insta-handle:hover {
+    color: #fff;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.insta-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.insta-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.insta-card p {
+    padding: 15px;
+    font-size: 0.95rem;
+    color: #d1d5db;
+}
+
+/* RODAPÉ */
+.footer {
+    padding: 50px 10%;
+    background-color: #070707;
+    border-top: 1px solid #1f1f1f;
+    text-align: center;
+}
+
+.footer-content p {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    color: #9ca3af;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-credits {
+    font-size: 0.75rem !important;
+    color: #4b5563 !important;
+}
+
+/* RESPONSIVIDADE PARA CELULARES (MOBILE) */
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #0b0b0b;
+        padding: 20px 0;
+        border-bottom: 1px solid #222;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .social-icons {
+        display: none; /* Oculta ícones extras no topo mobile para limpar o visual */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-grid, .insta-grid {
+        grid-template-columns: 1fr;
+    }
+}
