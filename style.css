@@ -107,7 +107,7 @@ body {
     .hero {
         /* No PC: Gradiente da ESQUERDA (escuro) para a DIREITA (transparente) */
         background: linear-gradient(to right, #0b0b0b 0%, rgba(11, 11, 11, 0.8) 60%, rgba(11, 11, 11, 0) 60%), 
-                    url(img/hero.jpg) no-repeat right center / contain;
+                    url(img/hero.jpg) no-repeat right center / cover;
         background-color: #0b0b0b;
     }
 }
