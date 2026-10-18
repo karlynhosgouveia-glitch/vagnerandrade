@@ -391,14 +391,6 @@ body {
   margin: 0;
 }
 
-.wsl-hp-name strong {
-  font-size: 18px;
-  font-weight: 800;  
-  color: #1e293b;
-  line-height: 1.1;
-  margin: 0;  
-}
-
 .wsl-hp-country {
   display: flex !important;
   align-items: center;
