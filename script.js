@@ -40,3 +40,23 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+// Ação do Botão Follow (Garante execução apenas após o carregamento do DOM)
+document.addEventListener('DOMContentLoaded', () => {
+  const followBtn = document.getElementById('wslFollowBtn');
+  
+  if (followBtn) {
+    let isFollowing = false;
+
+    followBtn.addEventListener('click', () => {
+      isFollowing = !isFollowing;
+
+      if (isFollowing) {
+        followBtn.textContent = 'Following';
+        followBtn.classList.add('wsl-following');
+      } else {
+        followBtn.textContent = 'Follow';
+        followBtn.classList.remove('wsl-following');
+      }
+    });
+  }
+});
