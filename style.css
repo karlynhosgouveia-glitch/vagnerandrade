@@ -150,7 +150,7 @@ body {
 /* SEÇÃO SOBRE */
 .about {
     padding: 100px 10%;
-    background-color: #121212;
+    background-color: #f5f5dc;
 }
 
 .about-container {
@@ -174,7 +174,7 @@ body {
 }
 
 .about-text p {
-    color: #9ca3af;
+    color: #000000;
     line-height: 1.6;
     margin-bottom: 15px;
     font-size: 1rem;
@@ -350,7 +350,7 @@ body {
   flex-wrap: nowrap !important;
   align-items: center !important;
   justify-content: space-between !important;
-  background-color: #ffffff;
+  background-color: #f5f5dc;
   border-radius: 0 !important; /* Opcional: remove bordas arredondadas se for encostar nas laterais */
   padding: 30px 5% !important; /* Espaçamento interno com porcentagem para adaptar a telas grandes */
   gap: 32px;
