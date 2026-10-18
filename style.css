@@ -351,13 +351,13 @@ body {
   align-items: center !important;
   justify-content: space-between !important;
   background-color: #ffffff;
-  border-radius: 12px;
-  padding: 30px;
+  border-radius: 0 !important; /* Opcional: remove bordas arredondadas se for encostar nas laterais */
+  padding: 30px 5% !important; /* Espaçamento interno com porcentagem para adaptar a telas grandes */
   gap: 32px;
   width: 100% !important;
-  max-width: 950px;
+  max-width: 100% !important; /* Força o uso da largura total */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  margin: 20px auto;
+  margin: 0 !important; /* Remove margens externas que centralizam o bloco */
   box-sizing: border-box !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
