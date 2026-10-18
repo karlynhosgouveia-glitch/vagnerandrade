@@ -342,3 +342,203 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- SEÇÃO WSL HORIZONTAL (Isolado com prefixo wsl-hp-) --- */
+
+.wsl-horizontal-profile {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  max-width: 950px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wsl-hp-avatar-container {
+  flex-shrink: 0;
+}
+
+.wsl-hp-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e2e8f0;
+  display: block;
+}
+
+.wsl-hp-main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.wsl-hp-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.wsl-hp-country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.wsl-hp-flag {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.wsl-hp-follow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.wsl-hp-followers {
+  display: flex;
+  flex-direction: column;
+}
+
+.wsl-hp-followers strong {
+  font-size: 18px;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.wsl-hp-followers span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.wsl-hp-btn-follow {
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.wsl-hp-btn-follow:hover {
+  background-color: #005bb5;
+}
+
+.wsl-hp-btn-follow.wsl-following {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+.wsl-hp-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.wsl-hp-social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.wsl-hp-social-link:hover {
+  color: #0073e6;
+}
+
+.wsl-hp-divider {
+  width: 1px;
+  height: 180px;
+  background-color: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.wsl-hp-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.wsl-hp-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.wsl-hp-stat-row:last-child {
+  border-bottom: none;
+}
+
+.wsl-hp-label {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.wsl-hp-value {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.wsl-hp-val-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.wsl-hp-subvalue {
+  color: #94a3b8;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Ajuste Responsivo para Celular */
+@media (max-width: 768px) {
+  .wsl-horizontal-profile {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .wsl-hp-divider {
+    display: none;
+  }
+
+  .wsl-hp-country, 
+  .wsl-hp-follow, 
+  .wsl-hp-socials {
+    justify-content: center;
+  }
+
+  .wsl-hp-stats {
+    width: 100%;
+  }
+}
