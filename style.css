@@ -342,43 +342,45 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
-/* --- SEÇÃO WSL HORIZONTAL (Isolado com prefixo wsl-hp-) --- */
+/* --- CORREÇÃO DO LAYOUT HORIZONTAL --- */
 
 .wsl-horizontal-profile {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
   background-color: #ffffff;
   border-radius: 12px;
   padding: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 32px;
+  width: 100% !important;
   max-width: 950px;
-  width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   margin: 20px auto;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 .wsl-hp-avatar-container {
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
 }
 
 .wsl-hp-avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
   border: 3px solid #e2e8f0;
-  display: block;
+  display: block !important;
 }
 
 .wsl-hp-main-info {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   gap: 12px;
-  min-width: 200px;
+  min-width: 220px !important;
+  flex-shrink: 0 !important;
 }
 
 .wsl-hp-name {
@@ -390,7 +392,7 @@ body {
 }
 
 .wsl-hp-country {
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 8px;
   color: #64748b;
@@ -405,14 +407,14 @@ body {
 }
 
 .wsl-hp-follow {
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 16px;
   margin-top: 4px;
 }
 
 .wsl-hp-followers {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 }
 
@@ -449,14 +451,14 @@ body {
 }
 
 .wsl-hp-socials {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   gap: 8px;
   margin-top: 6px;
 }
 
 .wsl-hp-social-link {
-  display: flex;
+  display: flex !important;
   align-items: center;
   gap: 10px;
   text-decoration: none;
@@ -471,22 +473,24 @@ body {
 }
 
 .wsl-hp-divider {
-  width: 1px;
-  height: 180px;
+  width: 1px !important;
+  height: 180px !important;
   background-color: #e2e8f0;
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
+  display: block !important;
 }
 
 .wsl-hp-stats {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   gap: 10px;
-  flex-grow: 1;
+  flex-grow: 1 !important;
+  width: 100%;
 }
 
 .wsl-hp-stat-row {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
   align-items: center;
   font-size: 14px;
   padding-bottom: 6px;
@@ -508,7 +512,7 @@ body {
 }
 
 .wsl-hp-val-group {
-  display: flex;
+  display: flex !important;
   gap: 12px;
   align-items: center;
 }
@@ -517,28 +521,4 @@ body {
   color: #94a3b8;
   font-size: 13px;
   font-weight: 400;
-}
-
-/* Ajuste Responsivo para Celular */
-@media (max-width: 768px) {
-  .wsl-horizontal-profile {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .wsl-hp-divider {
-    display: none;
-  }
-
-  .wsl-hp-country, 
-  .wsl-hp-follow, 
-  .wsl-hp-socials {
-    justify-content: center;
-  }
-
-  .wsl-hp-stats {
-    width: 100%;
-  }
 }
