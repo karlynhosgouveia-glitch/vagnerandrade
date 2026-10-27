@@ -364,9 +364,19 @@ body {
 }
 
 @media (max-width: 768px) {
-    .wsl-hp-section {
+    .wsl-horizontal-profile {
         flex-direction: column; /* Vertical no Celular */
+        flex-wrap: wrap;
+        align-items: stretch;
     }
+    .wsl-hp-divider {
+        display: none;
+    }
+    .wsl-hp-main-info,
+    .wsl-hp-stats {
+        width: 100% !important;
+    }
+    
 }
 
 .wsl-hp-avatar-container {
