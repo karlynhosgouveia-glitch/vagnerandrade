@@ -133,23 +133,24 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
-    /* Imagem de fundo com gradiente escuro para dar leitura ao texto */
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('img/prancha.png') no-repeat center center / cover;
-    background-color: #fff; /* Fallback caso a imagem não carregue */
-    color: #fff; /* Texto em branco para contrastar com o fundo */
+    width: 220px;
+    height: 80px;
+    background: url('img/prancha.png') no-repeat center center;
+    background-size: contain;
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 14px;
     letter-spacing: 1px;
-    transition: background 0.3s, transform 0.2s, filter 0.3s;
+    transition: transform 0.2s, filter 0.3s;
 }
 
 .btn:hover {
-    filter: brightness(1.2); /* Clareia a imagem levemente no hover */
     transform: translateY(-3px);
+    filter: brightness(1.1);
 }
-
 /* SEÇÃO SOBRE */
 .about {
     padding: 100px 10%;
@@ -385,7 +386,6 @@ body {
         text-align: center !important;     /* Garante que o conteúdo interno fique centralizado */
     }
 }
-
 .wsl-hp-avatar-container {
   flex-shrink: 0 !important;
 }
