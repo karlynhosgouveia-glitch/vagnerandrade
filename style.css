@@ -134,16 +134,19 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #fff;
-    color: #000;
+    /* Imagem de fundo com gradiente escuro para dar leitura ao texto */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('img/prancha.jpg') no-repeat center center / cover;
+    background-color: #fff; /* Fallback caso a imagem não carregue */
+    color: #fff; /* Texto em branco para contrastar com o fundo */
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-    transition: background 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.2s, filter 0.3s;
 }
 
 .btn:hover {
-    background-color: #e5e7eb;
+    filter: brightness(1.2); /* Clareia a imagem levemente no hover */
     transform: translateY(-3px);
 }
 
