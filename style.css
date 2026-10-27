@@ -136,7 +136,7 @@ body {
     padding: 12px 30px;
     /* Imagem de fundo com gradiente escuro para dar leitura ao texto */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('img/prancha.jpg') no-repeat center center / cover;
+                url('img/prancha.png') no-repeat center center / cover;
     background-color: #fff; /* Fallback caso a imagem não carregue */
     color: #fff; /* Texto em branco para contrastar com o fundo */
     text-decoration: none;
@@ -352,34 +352,38 @@ body {
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
-  align-items: center !important;
-  justify-content: space-between !important;
+  align-items: center !important;         /* Alinha os itens verticalmente ao centro no PC */
+  justify-content: space-between !important; /* Espaça os itens horizontalmente (ou mude para 'center' se quiser tudo colado no meio) */
   background-color: #f5f5dc;
-  border-radius: 0 !important; /* Opcional: remove bordas arredondadas se for encostar nas laterais */
-  padding: 30px 5% !important; /* Espaçamento interno com porcentagem para adaptar a telas grandes */
+  border-radius: 0 !important;
+  padding: 30px 5% !important;
   gap: 32px;
   width: 100% !important;
-  max-width: 100% !important; /* Força o uso da largura total */
+  max-width: 100% !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  margin: 0 !important; /* Remove margens externas que centralizam o bloco */
+  margin: 0 !important;
   box-sizing: border-box !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
     .wsl-horizontal-profile {
-        flex-direction: column !important; /* Vertical no Celular */
+        flex-direction: column !important;
         flex-wrap: wrap !important;
-        align-items: stretch !important;
+        align-items: center !important;    /* Centraliza os blocos horizontalmente no celular */
+        justify-content: center !important;/* Centraliza os blocos verticalmente no celular */
+        text-align: center !important;     /* Centraliza também os textos dentro dos blocos */
     }
+    
     .wsl-hp-divider {
         display: none !important;
     }
+    
     .wsl-hp-main-info,
     .wsl-hp-stats {
         width: 100% !important;
+        text-align: center !important;     /* Garante que o conteúdo interno fique centralizado */
     }
-    
 }
 
 .wsl-hp-avatar-container {
