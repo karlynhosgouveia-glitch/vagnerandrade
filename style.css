@@ -363,6 +363,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+@media (max-width: 768px) {
+    .wsl-hp-section {
+        flex-direction: column; /* Vertical no Celular */
+    }
+}
+
 .wsl-hp-avatar-container {
   flex-shrink: 0 !important;
 }
