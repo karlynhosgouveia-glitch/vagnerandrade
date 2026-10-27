@@ -368,12 +368,12 @@ body {
 
 @media (max-width: 768px) {
     .wsl-horizontal-profile {
-        flex-direction: column; /* Vertical no Celular */
-        flex-wrap: wrap;
-        align-items: stretch;
+        flex-direction: column !important; /* Vertical no Celular */
+        flex-wrap: wrap !important;
+        align-items: stretch !important;
     }
     .wsl-hp-divider {
-        display: none;
+        display: none !important;
     }
     .wsl-hp-main-info,
     .wsl-hp-stats {
