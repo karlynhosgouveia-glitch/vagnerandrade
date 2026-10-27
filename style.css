@@ -138,8 +138,8 @@ body {
     background: url('img/prancha.png') no-repeat center center;
     background-size: contain;
     text-align: center;
-    line-height: 80px;
-    color: #ffffff;
+    line-height: 70px;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
@@ -497,14 +497,6 @@ body {
 
 .wsl-hp-social-link:hover {
   color: #0073e6;
-}
-
-.wsl-hp-divider {
-  width: 1px !important;
-  height: 180px !important;
-  background-color: #e2e8f0;
-  flex-shrink: 0 !important;
-  display: block !important;
 }
 
 .wsl-hp-stats {
