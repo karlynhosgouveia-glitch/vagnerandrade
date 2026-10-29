@@ -85,7 +85,7 @@ body {
 .hero {
     width: 100%;
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), 
-                url(img/hero1.png) no-repeat right center / cover;
+                url(img/hero.jpg) no-repeat right center / cover;
     background-color: #0b0b0b;
     padding: 120px 10%;
     display: flex;
