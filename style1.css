@@ -1,0 +1,496 @@
+/* RESET E CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+/* CABEÇALHO */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: rgba(10, 17, 40, 0.95);
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.hero-logo {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* SEÇÃO HERO (HOME) */
+.hero {
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)), 
+                url(img/hero1.png) no-repeat right center / cover;
+    background-color: #0b0b0b;
+    padding: 120px 10%;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 769px) {
+    .hero {
+        background: linear-gradient(to right, #ffffff 0%, #ffffff 35%, rgba(11, 11, 11, 0) 65%), 
+                    url(img/hero1.png) no-repeat right center / contain;
+        background-color: #0b0b0b;
+    }
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-content h1 span {
+    color: #3b82f6;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #d1d5db;
+}
+
+.btn {
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    background: url('img/prancha.png') no-repeat center center;
+    background-size: contain;
+    text-align: center;
+    line-height: 68px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: transform 0.2s, filter 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* SEÇÃO SOBRE */
+.about {
+    padding: 100px 10%;
+    background-color: #f0f0f0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* SEÇÃO GALERIA */
+.gallery {
+    padding: 100px 10%;
+    background-color: #0b0b0b;
+    text-align: center;
+}
+
+.gallery h2, .instagram-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 6px;
+    background: #000;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* SEÇÃO INSTAGRAM */
+.instagram-section {
+    padding: 100px 10%;
+    background-color: #121212;
+    text-align: center;
+}
+
+.insta-handle {
+    display: inline-block;
+    color: #9ca3af;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 40px;
+    transition: color 0.3s;
+}
+
+.insta-handle:hover {
+    color: #fff;
+}
+
+/* RODAPÉ */
+.footer {
+    padding: 50px 10%;
+    background-color: #070707;
+    border-top: 1px solid #1f1f1f;
+    text-align: center;
+}
+
+.footer-content p {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    color: #9ca3af;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-credits {
+    font-size: 0.75rem !important;
+    color: #4b5563 !important;
+}
+
+/* RESPONSIVIDADE PARA CELULARES (MOBILE) */
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #0b0b0b;
+        padding: 20px 0;
+        border-bottom: 1px solid #222;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- SEÇÃO DO PERFIL DO ATLETA (PADRONIZADA) --- */
+
+.profile-section {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background-color: #f5f5dc;
+  border-radius: 0 !important;
+  padding: 30px 5% !important;
+  gap: 32px;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    .profile-divider {
+        display: none !important;
+    }
+    
+    .profile-main-info,
+    .profile-stats {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+
+.profile-avatar-container {
+  flex-shrink: 0 !important;
+}
+
+.profile-avatar {
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 3px solid #e2e8f0;
+  display: block !important;
+}
+
+.profile-main-info {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px;
+  min-width: 220px !important;
+  flex-shrink: 0 !important;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.profile-country {
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.profile-flag {
+  width: 24px;
+  height: auto;
+  border-radius: 2px;
+}
+
+.profile-follow {
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.profile-followers {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.profile-followers strong {
+  font-size: 18px;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.profile-followers span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.profile-btn-follow {
+  background-color: #0095f6 !important;
+  color: #ffffff !important;
+  border: none !important;
+  padding: 7px 16px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  text-align: center !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.profile-btn-follow:hover {
+  background-color: #1877f2;
+}
+
+.profile-socials {
+  display: flex !important;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.profile-social-link {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.profile-social-link:hover {
+  color: #0073e6;
+}
+
+.profile-stats {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px;
+  flex-grow: 1 !important;
+  width: 100%;
+}
+
+.profile-stat-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center;
+  font-size: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.profile-stat-row:last-child {
+  border-bottom: none;
+}
+
+.profile-label {
+  color: #64748b;
+  font-weight: 400;
+}
+
+.profile-value {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.profile-val-group {
+  display: flex !important;
+  gap: 12px;
+  align-items: center;
+}
